@@ -1,15 +1,32 @@
 <div class="wide-container footer-stretch clearfix">
     <div class="row">
-        <footer class="large-18 columns ">
-            <!-- logo -->
-            <div class="logo-footer">
-                <a href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/style/images/logo-footer.png" alt="Logo" class="logo-footer">
-                </a>
+        <footer class="large-18 columns">
+            <div class="small-18 columns text-center pad">
+                <h3><small>OUR PRINCIPLES</small></h3>
+                <h4>Support, Transition, Action, Resolve, Transformation</h4>
             </div>
-            <!-- /logo -->
-            <div id="copyright">&copy;<?php echo date("Y "); echo stripslashes(get_option('ranklab_copyright')); ?></div>
+            <div class="small-18 columns footer-block" data-equalizer>
+                <!-- logo -->
+                <div class="large-4 columns logo-footer text-center pad">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/style/images/logo-footer.png" alt="Logo" class="logo-footer">
+                    </a>
+                    <div class="nav-cta text-center"><a href="tel:+18881234567"><h3>888-123-4567</h3></a></div>
+                </div>
+                <!-- /logo -->
+                <div class="large-12 columns medium-offset-2 pad">
+                <?php wp_nav_menu(array("menu" => "Footer Menu 1", 'container' => 'false', 'items_wrap' => '<div class="medium-9 large-4 columns"><h3>ABOUT US</h3><ul class="no-bullet">%3$s</ul></div>')); ?>
+                <?php wp_nav_menu(array('menu' => 'Footer Menu 2', 'container' => 'false', 'items_wrap' => '<div class="medium-9 large-4 columns"><h3>WHAT WE TREAT</h3><ul class="no-bullet">%3$s</ul></div>')); ?>
+                <?php wp_nav_menu(array("menu" => "Footer Menu 3", 'container' => 'false', 'items_wrap' => '<div class="medium-9 large-4 columns "><h3>TREATMENT</h3><ul class="no-bullet">%3$s</ul></div>')); ?>
+                                <?php wp_nav_menu(array("menu" => "Footer Menu 4", 'container' => 'false', 'items_wrap' => '<div class="medium-9 large-4 columns end"><h3>QUICK LINKS</h3><ul class="no-bullet">%3$s</ul></div>')); ?>
+                </div>
+            </div>      
         </footer>
+    </div>
+    <div id="copyright">
+        <div class="row text-center">
+            A New Start Copyright
+        </div>
     </div>
 </div><!-- end footer-container -->
 

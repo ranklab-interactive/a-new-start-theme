@@ -56,7 +56,8 @@ Template Name: Homepage template
 <div class="wide-container home-block-3 clearfix">
     <div class="small-18 columns pad">
         <div class="row pad" data-equalizer>
-            <div class="medium-6 columns text-center home-block-3-1">
+            <div class="medium-12 columns">
+            <div class="medium-18 large-9 columns text-center home-block-3-1">
                 <div class="row">
                     <div class="small-18 columns small-centered">
                         <div  class="small-18 columns text-left" data-equalizer-watch>
@@ -67,7 +68,7 @@ Template Name: Homepage template
                     </div>
                 </div>
             </div>
-            <div class="medium-6 columns text-center home-block-3-2">
+            <div class="small-18 large-9 columns text-center home-block-3-2">
                 <div class="row">
                     <div class="small-18 columns small-centered">
                         <div  class="small-18 columns text-left" data-equalizer-watch>
@@ -78,6 +79,7 @@ Template Name: Homepage template
                     </div>
                 </div>
             </div>
+                </div>
             <div class="medium-6 columns text-center home-block-3-3">
                 <div class="row valign-middle-all">
                     <div class="small-18 columns text-center nav-cta">
