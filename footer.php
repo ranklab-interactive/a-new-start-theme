@@ -40,19 +40,8 @@
     $(document).foundation();
     /* TODO -  Customize Sidr menu if applicable*/       
     $(document).ready(function(){
-        //        $('#device-menu').sidr({
-        //            name: 'sidr-left',
-        //            body: '.device-only',
-        //            side: 'left',
-        //            source: '.menu-nav-header'
-        //        });
-        //        $('#more-menu').sidr({
-        //            name: 'sidr-inner',
-        //            body: '.false-body',
-        //            renaming: false,
-        //            side: 'new',
-        //            source: '.more-menu-nav-header'
-        //        });
+        $("#my-menu").mmenu();
+
         /* TODO -  Customize Slick Slider */
         $('.home-block-2-slider-scroll').slick({
             infinite: true,

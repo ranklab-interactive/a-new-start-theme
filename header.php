@@ -20,15 +20,18 @@
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/style/css/sidr/jquery.sidr.light.css" />
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/style/css/slick.css" />
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+        <?php wp_head(); ?>
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/style/css/jquery.mmenu.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/style/css/jquery.mmenu.positioning.css" />
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.mmenu.min.js"></script>
         <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/style/css/dev-style.css"/>
-<?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
         
         <!-- header -->
         <div class="wide-container clearfix">
             <header class="large-18 no-space columns" data-equalizer>
-                <div class="small-4 medium-3 large-1 columns text-center pad" id="more-menu" data-equalizer-watch><a id="responsive-menu-button" href="#sidr-main"><img src="<?php echo get_template_directory_uri(); ?>/style/images/hamburger.png" alt="Menu" title=""></a></div>
+                <div class="small-4 medium-3 large-1 columns text-center pad" id="more-menu" data-equalizer-watch><a id="more-nav-menu" href="#my-menu"><img src="<?php echo get_template_directory_uri(); ?>/style/images/hamburger.png" alt="Menu" title=""></a></div>
                 <div class="small-14 medium-5 large-3 columns valign-middle">
                     <!-- logo -->
                     <div class="logo centered" data-equalizer-watch>
@@ -49,4 +52,9 @@
                     </div>
                 </div>
             </header>
-        </div><!-- end header-container -->
+        </div>
+        <nav id="my-menu" class="" role="navigation">
+                                <?php wp_nav_menu(array('menu' => 'Main Menu', 'menu_class' => 'main-more-nav-menu', 'depth' => 1, 'items_wrap' => '<div class="menu-more-nav-header"><ul>%3$s</ul></div>')); ?>
+                                    
+                            </nav>
+        <!-- end header-container -->
