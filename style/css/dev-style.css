@@ -203,8 +203,8 @@ a#menu-cta-link{color: #aae2f6 !important;}
 /* The ghost, nudged to maintain perfect centering */
 .valign-middle:before{content:'';display:inline-block;height:100%;vertical-align:middle;margin-right:-0.25em}
 .valign-middle{display: inline-block;}
-.valign-middle-absolute{display: table; position: relative; top: 50%; transform: translate(0, -50%);}
-.valign-middle-all{display:table;left:50%;margin-right:-50%!important;position:relative;top:50%;transform:translate(-50%,-50%)!important}
+.valign-middle-absolute{display: table; position: relative; top: 50%; transform: translate(0, -50%);-webkit-transform: translate(0, -50%);-ms-transform: translate(0, -50%);}
+.valign-middle-all{display:table;left:50%;margin-right:-50%!important;position:relative;top:50%;transform:translate(-50%,-50%)!important;-webkit-transform:translate(-50%,-50%)!important;-ms-transform:translate(-50%,-50%)!important}
 
 /* The element to be centered, can also be of any width and height */ 
 .centered{display:block;vertical-align:middle}
