@@ -195,6 +195,7 @@ ul.top-menu-right li:first-child{margin-left: 0px;}
 a#menu-cta-link{color: #aae2f6 !important;}
 
 /*//___More Menu Stylo___\\*/
+html.mm-opened body{margin-right:12px}
 #my-menu{background: #f86d13;}
 .mm-list>li>a,.mm-list>li>span{color:#FFF;}
 .mm-list>li>a:hover{color: #ededed;}
