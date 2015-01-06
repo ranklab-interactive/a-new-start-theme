@@ -19,21 +19,7 @@ Template Name: Homepage template
 </div>
 <div class="wide-container clearfix">
     <div class="small-18 columns">
-        <div class="row">
-            <div class="small-14 medium-7 large-5 columns testimonial-block-photo small-centered medium-uncentered" style="background-image: url('<?php echo get_template_directory_uri(); ?>/style/images/home-testm-1.jpg');">
-            </div>
-            <div class="medium-11 large-13 columns">
-                <div class="medium-18 large-13 columns no-space">
-                    <div class="testimonial-block-quote">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                        <span>- Craig</span>
-                    </div>
-                </div>
-                <div class="medium-18 large-5 columns small-text-center medium-text-left testimonial-block-more">
-                    <button class="testimonial-block-more-button">Testimonials</button>
-                </div>
-            </div>
-        </div>
+        <?php include (TEMPLATEPATH . '/library/includes/testimonials.php'); ?> 
     </div>
 </div>
 <div class="wide-container home-block-2 clearfix">
