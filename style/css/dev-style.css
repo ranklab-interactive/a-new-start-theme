@@ -170,17 +170,15 @@ div[id*="sidr"] li.sidr-class-nav-menu-more{display: none !important;}
 /*//___Header Stylings___\\*/
 header{background: #FFF;border-bottom: 1px solid #ededed;}
 #more-menu{border-right: 1px solid #ededed;}
-#more-menu img{padding: 25%;}
-.nav-cta{margin-top: 0px; padding: 10px 0px;}
+#more-menu img{padding: 2em 0;}
 .nav-cta h2, .nav-cta h3{margin: 0px;line-height: 1.25em;font-size: 2em}
 .nav-cta h2 small{color: #333;text-transform: none;letter-spacing: .05em;}
-.nav-cta h3{color:#f86d13;font-weight:700}
+.nav-cta h3 a{color:#f86d13;font-weight:700}
 #top-nav{}
 ul.top-menu-right li a{color: #b4b4b4;}
 ul.top-menu-right li a:hover{color: #f27527;}
 ul.top-menu-right li{list-style: none;display: inline-block; margin-left: 15px;}
 ul.top-menu-right li:first-child{margin-left: 0px;}
-
 #main-nav{padding-left: 10px;}
 #main-nav ul{}
 #main-nav ul li a{color:#339cc1;font-size:1em;font-weight:700;line-height:1;text-transform: uppercase;}
@@ -215,11 +213,12 @@ h2{font-size:2.75em;color:#000;}
 .testimonial-block-quote p{color:#333;font-size:1.85em;font-weight:400;line-height:1.333}
 .testimonial-block-photo{min-height: 25em;}
 .nav-cta-block{background: #aae2f6}
-.nav-cta{margin-top: 10px;float: none !important;}
+.nav-cta{margin: 20px 0;float: none !important;}
+header .nav-cta h2 small{color: #FFF;font-size: 1em; font-weight: 400;}
 .featured-image-text > .large-17 > button{display: block;left: 0px;top: 1em;}
 }
 @media only screen and (max-width: 64em){
-    #more-menu img{padding: 5%;}
+    #more-menu img{padding: 1.5em 0;}
     .header-logo{width: 100%}
     .nav-cta h2, .nav-cta h3{margin: 0px;line-height: 1.25em;font-size: 1.65em}
 #home-featured-image-container .featured-image-text span{font-size:2.5em;}
@@ -233,27 +232,28 @@ h2{font-size:2.75em;color:#000;}
     #sidr-inner{top:85px;}
     #facility-image-wide {background-attachment: scroll;}
     .testimonial-block-quote{height: 20em;}
-/*.featured-image-text button{left:0; top: 1em;}*/
 header .valign-middle:before{display: none;}
-.logo{padding: 5px 0px;}
-.nav-cta{padding: 0px;margin-top: 0px;}
+.logo{padding: 1em 0px;}
+
 }
 @media only screen and (max-width: 90em) {
-    .nav-cta{padding: 0px;}
 #main-nav ul li a{font-size: 0.85em;}
 #main-nav ul li{margin: 5px;}
 .navigation-callout p{font-size:20px;}
 }
-/*//___Small Breakpoint___\\*/
-@media only screen and (min-width: 40.063em) {}
-/*//___Medium Breakpoint___\\*/
+/*//___Applies to elements above Small Breakpoint___\\*/
+@media only screen and (min-width: 40.063em) {
+header .nav-cta-block{border-left: 1px solid #ededed;}
+header .nav-cta{padding: 1.3em 0;}
+}
+/*//___Applies to elements above Medium Breakpoint___\\*/
 @media only screen and (min-width: 64.063em) {
 .testimonial-block-more{position: relative; height: 30em;}
 .testimonial-block-more-button{display: block;position: absolute;top: 80%; transform: translate(0,-80%);right: 0px;}
 }
-/*//___Large Breakpoint___\\*/
+/*//___Applies to elements above Large Breakpoint___\\*/
 @media only screen and (min-width: 90.063em) {}
-/*//___X-Large Breakpoint___\\*/
+/*//___Applies to elements above X-Large Breakpoint___\\*/
 @media only screen and (min-width: 120.063em) {}
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
